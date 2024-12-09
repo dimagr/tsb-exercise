@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Banking App</h1>
+    <div id="login-section">
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button id="login-btn">Login</button>
+    </div>
+
+    <div id="main-section" style="display: none;">
+        <h2>Welcome</h2>
+        <button id="logout-btn">Logout</button>
+        <div id="account-list"></div>
+        <div id="transactions"></div>
+        <div id="transfer-form" style="display: none;">
+          <h3>Transfer Money</h3>
+          <label for="transfer-amount">Amount:</label>
+          <input type="number" id="transfer-amount" step="any" required />
+          <label for="to-account-id">To Account ID:</label>
+          <input type="number" id="to-account-id" required />
+          <button id="transfer-btn">Transfer</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
